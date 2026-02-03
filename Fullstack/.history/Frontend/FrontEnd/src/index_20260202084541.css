@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue';
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+html{
+  background-color: #212121;
+}
+
+.note{
+  background-color: #494949;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  max-width: 320px;
+  color: rgb(255, 253, 249);
+}

@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #121212;
+  color: #f5f5f5;
+}
+
+/* ---------- FORM ---------- */
+
+.note-create-form {
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem 3rem;
+  background: #1e1e1e;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.note-create-form input {
+  flex: 1;
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #333;
+  background: #2b2b2b;
+  color: white;
+  font-size: 0.95rem;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.note-create-form input:focus {
+  border-color: #4cafef;
+  box-shadow: 0 0 5px #4cafef55;
+}
+
+.note-create-form button {
+  padding: 0.7rem 1.2rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  background: #4cafef;
+  color: white;
+  transition: 0.2s ease;
+}
+
+.note-create-form button:hover {
+  background: #379ad6;
+}
+
+/* ---------- NOTES GRID ---------- */
+
+.notes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem 3rem;
+}
+
+/* ---------- NOTE CARD ---------- */
+
+.note {
+  background: #1f1f1f;
+  padding: 1.2rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.note:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.6);
+}
+
+.note h1 {
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+  color: #ffffff;
+}
+
+.note p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #cfcfcf;
+  margin-bottom: 1rem;
+}
+
+/* ---------- ACTION BUTTONS ---------- */
+
+.note button {
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.4rem;
+  border: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+  transition: 0.2s ease;
+}
+
+.note button:first-of-type {
+  background: #ffc107;
+  color: #1e1e1e;
+}
+
+.note button:first-of-type:hover {
+  background: #e0a800;
+}
+
+.note button:last-of-type {
+  background: #e53935;
+  color: white;
+}
+
+.note button:last-of-type:hover {
+  background: #c62828;
+}
